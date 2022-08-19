@@ -1,5 +1,5 @@
-function Navbar() {
-    return (
+const page =
+   (
         <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
                 <a className="navbar-brand" href="#">Navbar</a>
@@ -37,23 +37,8 @@ function Navbar() {
             </div>
         </nav>
     )
-}
-
-function MainContent() {
-    return (
-        <p className="m-3">I am learning React!</p>
-    )
-}
-
-const h3 = document.getElementById("h3")
-h3.textContent = "Imperative way of programming"
-h3.className= "header"
-document.getElementById("h3").append(h3)
 
 ReactDOM.render(
-    <div>
-        <Navbar />
-        <MainContent />
-    </div>,
+    page,
     document.getElementById("root")
 )
