@@ -39,7 +39,21 @@ function Navbar() {
     )
 }
 
+function MainContent() {
+    return (
+        <p className="m-3">I am learning React!</p>
+    )
+}
+
+const h3 = document.getElementById("h3")
+h3.textContent = "Imperative way of programming"
+h3.className= "header"
+document.getElementById("h3").append(h3)
+
 ReactDOM.render(
-    <div><Navbar /></div>,
+    <div>
+        <Navbar />
+        <MainContent />
+    </div>,
     document.getElementById("root")
 )
