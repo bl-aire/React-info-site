@@ -17,7 +17,7 @@ function Header() {
     return(
         <header>
             <nav className="nav">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" height="40px" className="mb-3" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"  className="mb-3 nav-logo" />
                 <ul className="nav-items">
                     <li>Pricing</li>
                     <li>About</li>
@@ -30,7 +30,7 @@ function Header() {
 
 function MainContent() {
     return (
-        <div>
+        <div className="main">
             <h1>Fun facts about React</h1>
             <ol>
                 <li>Was first released in 2013</li>
@@ -45,9 +45,9 @@ function MainContent() {
 
 function Footer() {
     return ( 
-        <fooer>
+        <footer className="footer">
             <small>@2021 Blaire development. All rights reserved.</small>
-        </fooer>
+        </footer>
     )
 }
 
