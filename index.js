@@ -1,5 +1,5 @@
 
-const page = (
+/*const page = (
     <div className="m-4">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" height="40px" className="mb-3" />
         <h1>Fun facts about React</h1>
@@ -11,6 +11,49 @@ const page = (
             <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
     </div>
-)
+)*/
 
-ReactDOM.render(page , document.getElementById("root"))
+function Header() {
+    return(
+        <header>
+            <nav className="nav">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" height="40px" className="mb-3" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
+function MainContent() {
+    return (
+        <div>
+            <h1>Fun facts about React</h1>
+            <ol>
+                <li>Was first released in 2013</li>
+                <li>Was originally created by Jordan Walke</li>
+                <li>Has well over 100K stars on Github</li>
+                <li>Is maintained by Facebook</li>
+                <li>Powers thousands of enterprise apps, including mobile apps</li>
+            </ol>
+        </div>
+    )
+}
+
+function Footer() {
+    return ( 
+        <fooer>
+            <small>@2021 Blaire development. All rights reserved.</small>
+        </fooer>
+    )
+}
+
+ReactDOM.render(
+    <div>
+        <Header />
+        <MainContent />
+        <Footer />
+    </div>, document.getElementById("root"))
