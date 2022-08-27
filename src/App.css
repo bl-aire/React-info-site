@@ -58,6 +58,12 @@ html, body {
   width: 100vw;
 }
 
+@media only screen and (min-width:360px) and (max-width:420) {
+  .nav-logo_text {
+    display: none;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
