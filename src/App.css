@@ -43,6 +43,15 @@ html, body {
   align-items: center;
 }
 
+ul li {
+  margin: 0.7em 0;
+}
+
+ul li::marker {
+  color:#61DAF8;
+  font-size: 1.4rem;
+}
+
 /*.content-list {
   color
 }*/
