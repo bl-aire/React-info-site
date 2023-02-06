@@ -11,8 +11,6 @@ export default function Main() {
                     <li>Is maintained by Facebook</li>
                     <li>Powers thousands of enterprise apps, including mobile apps</li>
                 </ul>
-
-                <img src="./src/logo.svg"/>
         </div>
     )
 }
