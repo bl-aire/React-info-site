@@ -4,18 +4,20 @@
 const { test, expect } = require('@playwright/test');
 
 test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+  await page.goto('https://playwright.dev/');  //NAVIGATION
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+  await expect(page).toHaveTitle(/Playwright/); //ASSERTION
 });
 
-test('get started link', async ({ page }) => {
+test('get started link', async ({ page }) => { //TEST ISOLATION
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+  await page.getByRole('link', { name: 'Get started' }).click(); //INTERACTION
 
   // Expects the URL to contain intro.
   await expect(page).toHaveURL(/.*intro/);
 });
+
+// TEST HOOKS: test.describe, test.beforeEach, test.afterEach, test.beforeAll etc
