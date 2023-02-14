@@ -1,4 +1,6 @@
-// @ts-check
+// @ts-check 
+//....for automatic type checking when using JS in VS Code
+
 const { test, expect } = require('@playwright/test');
 
 test('has title', async ({ page }) => {
