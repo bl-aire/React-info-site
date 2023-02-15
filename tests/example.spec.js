@@ -10,7 +10,8 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/); //ASSERTION
 });
 
-test('get started link', async ({ page }) => { //TEST ISOLATION
+//TEST ISOLATION
+test('get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.
