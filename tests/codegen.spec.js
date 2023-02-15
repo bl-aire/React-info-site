@@ -1,4 +1,6 @@
-import { test, expect } from '@playwright/test';
+//import { test } from '@playwright/test'; //is import used for js?
+
+const { test } = require('@playwright/test');
 
 test('test', async ({ page }) => {
   await page.goto('https://demo.playwright.dev/todomvc/');
