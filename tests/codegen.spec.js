@@ -1,5 +1,3 @@
-//import { test } from '@playwright/test'; //is import used for js?
-
 const { test } = require('@playwright/test');
 
 test('test', async ({ page }) => {
